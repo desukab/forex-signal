@@ -1,0 +1,69 @@
+{
+  "api_key": "",
+  "account_type": "practice",
+  "pair": "EUR_USD",
+
+  "model": "both",
+  "tf_decision": "M5",
+  "tf_confirm": "M5",
+
+  "momentum": {
+    "tf_trend": "M5",
+    "tf_major": "M15",
+    "ema_fast": 50,
+    "ema_slow": 200,
+    "rsi_period": 14,
+    "rsi_ob": 70,
+    "rsi_os": 30,
+    "adx_period": 14,
+    "adx_min": 22,
+    "di_min": 15,
+    "stoch_k": 14,
+    "stoch_d": 3,
+    "stoch_ob": 80,
+    "stoch_os": 20,
+    "pullback_pct": 0.0012,
+    "min_range_pct": 0.00020,
+    "max_range_pct": 0.0040
+  },
+
+  "reversal": {
+    "band": "bollinger",
+    "bb_period": 20,
+    "bb_std": 2.0,
+    "keltner_period": 20,
+    "keltner_atr_mult": 2.0,
+    "atr_period": 14,
+    "stoch_rsi_period": 14,
+    "stoch_rsi_k": 3,
+    "stoch_rsi_d": 3,
+    "stoch_ob": 80,
+    "stoch_os": 20,
+    "body_min_pct": 0.0003,
+    "min_band_width_pct": 0.001,
+    "max_range_pct": 0.004,
+    "require_close_past_band": true,
+    "use_fisher": true
+  },
+
+  "backtest": {
+    "days_back": 30,
+    "expiries": [1, 2, 3, 5],
+    "min_signals": 20,
+    "payout": 0.8,
+    "stake": 1.0,
+    "warmup_bars": 250
+  },
+
+  "webhook": {
+    "url": "",
+    "enabled": false
+  },
+
+  "telegram": {
+    "bot_token": "",
+    "chat_id": ""
+  },
+
+  "min_bars": 300
+}

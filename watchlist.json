@@ -1,0 +1,9 @@
+{
+  "pairs": [
+    { "symbol": "EUR_USD", "expiry_hint": 5 },
+    { "symbol": "GBP_USD", "expiry_hint": 5 },
+    { "symbol": "USD_JPY", "expiry_hint": 5 },
+    { "symbol": "XAU_USD", "expiry_hint": 2 }
+  ],
+  "note": "expiry_hint in minutes; optimizer will override with measured best expiry per pair"
+}

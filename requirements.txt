@@ -1,0 +1,4 @@
+# The engine is 100% stdlib — no pip packages required.
+# numpy is no longer a dependency (Python 3.14 has no wheel for it in many
+# setups, and pure-Python math runs fine). The npm server needs only Node's
+# built-ins plus `ws` (via `npm install`, optional for HTTP/SSE-only use).
